@@ -1,140 +1,327 @@
 
-#include <stdio.h>
-int main()
-{
-    double a = 15/4;
-    printf("%lf",a);
-}
+// #include <stdio.h>
+// int main()
+// {
+//     double a = 15/4;
+//     printf("%lf",a);
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 5;
+//     a--;
+//     printf("%d", --a);
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 10;
+//     int x = a++;
+//     --x;
+//     a--;
+//     int y = --x;
+//     printf("%d", y--);
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 10;
+//     int y = 12;
+//     if(x>=y && x<=y)
+//     {
+//         printf("hi");
+//     }
+//     else
+//     {
+//         printf("hello");
+//     }
+// }
+
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 10;
+//     int y = 12;
+//     if(x>=y || x<=y)
+//     {
+//         printf("hi ");
+//     }
+
+//     printf("hello");
+// }
+
+// #include <stdio.h>
+//     int main()
+//     {
+//         int x = 5;
+//         if (x < 10) {
+//             printf("hello ");
+//         }
+//         if (x == 5) {
+//             printf("hi");
+//         }
+//         else {
+//             printf("no");
+//         }
+//     }
+
+// #include <stdio.h>
+// int main()
+// {
+//     for (int j = 5; j <= 10; j++)
+//     {
+//         printf("hi ");
+//     }
+// }
+// #include <stdio.h>
+// int main()
+// {
+
+//     int i=0,j=0;
+//     for(j=1;j<=5;j++)
+//     {
+//         i++;
+//     }
+//     printf("%d",j);
+
+
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     for(int i=0;i<=5;i++)
+// {
+//      for(int j=1;j<3;j++)
+//      {
+//          printf("*");
+//      }
+// }
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int i = 5;
+//     while(i<10)
+//     {
+//         printf("i");
+//         i++;
+//     }
+// }
+// int main()
+// {
+//      int i = -5;
+//     while(i<3)
+//     {
+//         printf("hello ");
+//         i+=2;
+//     }
+// }
+// #include <stdio.h>
+// int main()
+// {
+//      int i = 1;
+//     do
+//     {
+//         printf("%d ",i);
+//         i++;
+//     } while (i<5);
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     for(int i=0;i<=10;i++)
+//     {
+//         int x = 4;
+//     }
+//     printf("%d",i);
+// }
 
 #include <stdio.h>
 int main()
 {
-    int a = 5;
-    a--;
-    printf("%d", --a);
-}
+    int a = 5, b = 1 ,c = 3;
 
+    if(a>b && b>c)
+    {
+        printf("%d",a);
+    }
+    else if(b>a && c>b)
+    {
+        printf("%d",b);
+    }
+    else
+    {
+        printf("%d",c);
+    }
+    return 0;
+}
 #include <stdio.h>
 int main()
 {
-    int a = 10;
-    int x = a++;
-    --x;
-    a--;
-    int y = --x;
-    printf("%d", y--);
+    int x = 4;
+   if(x%2!=0)
+    {
+        printf("Even ");
+    }
+    else
+    {
+        printf("Odd ");
+    }
+    if(x>0)
+    {
+        printf("Positive ");
+    }
+    else
+    {
+        printf("Negative ");
+    }
 }
-
 #include <stdio.h>
 int main()
 {
-    int x = 10;
-    int y = 12;
-    if(x>=y && x<=y)
+    int x = 1;
+    if (x < 5)
+    {
+        printf("hello");
+    }
+    if (x <= 10)
     {
         printf("hi");
     }
     else
     {
-        printf("hello");
+        printf("no");
     }
+    return 0;
 }
 
-#include <stdio.h>
 int main()
 {
-    int x = 10;
-    int y = 12;
-    if(x>=y || x<=y)
-    {
-        printf("hi ");
-    }
-
-    printf("hello");
+    int num = 5;
+if (num > 10) {
+   printf("Greater than 10");
+} else if (num < 10) {
+   printf("Less than 10");
+} else {
+   printf("Equal to 10");
+}
 }
 
-#include <stdio.h>
-    int main()
+
+int main()
+{
+    int marks;
+    if(marks >= 80)
     {
-        int x = 5;
-        if (x < 10) {
-            printf("hello ");
+        printf("A+");
+    }
+    else if(marks >= 70)
+    {
+        printf("A");
+    }
+    else if(marks >= 70)
+    {
+        printf("A-");
+    }
+}
+int main()
+{
+    int marks;
+    if(marks >= 80)
+    {
+        printf("A+");
+    }
+    if(marks >= 70)
+    {
+        printf("A");
+    }
+    if(marks >= 70)
+    {
+        printf("A-");
+    }
+}
+
+
+int main()
+{
+    int x = 0;
+    if (x == 1)
+    {
+        if (x == 0)
+        {
+            printf("inside if if\n");
         }
-        if (x == 5) {
-            printf("hi");
-        }
-        else {
-            printf("no");
+        else
+        {
+            printf("inside if else\n");
         }
     }
-
-#include <stdio.h>
-int main()
-{
-    for (int j = 5; j <= 10; j++)
+    else
     {
-        printf("hi ");
+        printf("inside else\n");
     }
 }
+
+
+
 #include <stdio.h>
 int main()
 {
-
-    int i=0,j=0;
-    for(j=1;j<=5;j++)
+    int x = 5;
+int y = 4;
+    if(x>=y && x<y+4)
     {
-        i++;
+        if(y<5)
+        {
+            printf("hi ");
+        }
+        else if(y<10)
+        {
+            printf("hi ");
+        }
     }
-    printf("%d",j);
-
-
-}
-#include <stdio.h>
-int main()
-{
-    for(int i=0;i<=5;i++)
-{
-     for(int j=1;j<3;j++)
-     {
-         printf("*");
-     }
-}
-}
-#include <stdio.h>
-int main()
-{
-    int i = 5;
-    while(i<10)
-    {
-        printf("i");
-        i++;
-    }
-}
-int main()
-{
-     int i = -5;
-    while(i<3)
+    else
     {
         printf("hello ");
-        i+=2;
     }
 }
 #include <stdio.h>
 int main()
 {
-     int i = 1;
-    do
+    int x = 5;
+int y = 4;
+if (x >= y && x < y + 4)
+{
+    if (y < 5)
     {
-        printf("%d ",i);
-        i++;
-    } while (i<5);
+        printf("hi ");
+    }
+    if (y < 10)
+    {
+        printf("hi ");
+    }
 }
-#include <stdio.h>
+else
+{
+    printf("hello ");
+}
+}
 int main()
 {
-    for(int i=0;i<=10;i++)
+    int x = 0;
+    if (x == 1)
     {
-        int x = 4;
+        if (x >= 0)
+        {
+            printf("true\n");
+        }
+        else
+        {
+            printf("false\n");
+        }
     }
-    printf("%d",i);
+    return 0;
 }
