@@ -139,189 +139,222 @@
 //     printf("%d",i);
 // }
 
+// #include <stdio.h>
+// int main()
+// {
+//     int a = 5, b = 1 ,c = 3;
+
+//     if(a>b && b>c)
+//     {
+//         printf("%d",a);
+//     }
+//     else if(b>a && c>b)
+//     {
+//         printf("%d",b);
+//     }
+//     else
+//     {
+//         printf("%d",c);
+//     }
+//     return 0;
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 4;
+//    if(x%2!=0)
+//     {
+//         printf("Even ");
+//     }
+//     else
+//     {
+//         printf("Odd ");
+//     }
+//     if(x>0)
+//     {
+//         printf("Positive ");
+//     }
+//     else
+//     {
+//         printf("Negative ");
+//     }
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 1;
+//     if (x < 5)
+//     {
+//         printf("hello");
+//     }
+//     if (x <= 10)
+//     {
+//         printf("hi");
+//     }
+//     else
+//     {
+//         printf("no");
+//     }
+//     return 0;
+// }
+
+// int main()
+// {
+//     int num = 5;
+// if (num > 10) {
+//    printf("Greater than 10");
+// } else if (num < 10) {
+//    printf("Less than 10");
+// } else {
+//    printf("Equal to 10");
+// }
+// }
+
+
+// int main()
+// {
+//     int marks;
+//     if(marks >= 80)
+//     {
+//         printf("A+");
+//     }
+//     else if(marks >= 70)
+//     {
+//         printf("A");
+//     }
+//     else if(marks >= 70)
+//     {
+//         printf("A-");
+//     }
+// }
+// int main()
+// {
+//     int marks;
+//     if(marks >= 80)
+//     {
+//         printf("A+");
+//     }
+//     if(marks >= 70)
+//     {
+//         printf("A");
+//     }
+//     if(marks >= 70)
+//     {
+//         printf("A-");
+//     }
+// }
+
+
+// int main()
+// {
+//     int x = 0;
+//     if (x == 1)
+//     {
+//         if (x == 0)
+//         {
+//             printf("inside if if\n");
+//         }
+//         else
+//         {
+//             printf("inside if else\n");
+//         }
+//     }
+//     else
+//     {
+//         printf("inside else\n");
+//     }
+// }
+
+
+
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 5;
+// int y = 4;
+//     if(x>=y && x<y+4)
+//     {
+//         if(y<5)
+//         {
+//             printf("hi ");
+//         }
+//         else if(y<10)
+//         {
+//             printf("hi ");
+//         }
+//     }
+//     else
+//     {
+//         printf("hello ");
+//     }
+// }
+// #include <stdio.h>
+// int main()
+// {
+//     int x = 5;
+// int y = 4;
+// if (x >= y && x < y + 4)
+// {
+//     if (y < 5)
+//     {
+//         printf("hi ");
+//     }
+//     if (y < 10)
+//     {
+//         printf("hi ");
+//     }
+// }
+// else
+// {
+//     printf("hello ");
+// }
+// }
+// int main()
+// {
+//     int x = 0;
+//     if (x == 1)
+//     {
+//         if (x >= 0)
+//         {
+//             printf("true\n");
+//         }
+//         else
+//         {
+//             printf("false\n");
+//         }
+//     }
+//     return 0;
+// }
+
+//-----------------------------------------------
+
+// #include <stdio.h>
+// int main() {
+    
+    
+//     return 0;
+// }
+
+
 #include <stdio.h>
-int main()
-{
-    int a = 5, b = 1 ,c = 3;
+int main() {
+    char X;
+    
+    scanf("%c", &X);
 
-    if(a>b && b>c)
-    {
-        printf("%d",a);
+    if (X >= '0' && X <= '9') {
+        printf("IS DIGIT\n");
     }
-    else if(b>a && c>b)
-    {
-        printf("%d",b);
-    }
-    else
-    {
-        printf("%d",c);
-    }
-    return 0;
-}
-#include <stdio.h>
-int main()
-{
-    int x = 4;
-   if(x%2!=0)
-    {
-        printf("Even ");
-    }
-    else
-    {
-        printf("Odd ");
-    }
-    if(x>0)
-    {
-        printf("Positive ");
-    }
-    else
-    {
-        printf("Negative ");
-    }
-}
-#include <stdio.h>
-int main()
-{
-    int x = 1;
-    if (x < 5)
-    {
-        printf("hello");
-    }
-    if (x <= 10)
-    {
-        printf("hi");
-    }
-    else
-    {
-        printf("no");
-    }
-    return 0;
-}
 
-int main()
-{
-    int num = 5;
-if (num > 10) {
-   printf("Greater than 10");
-} else if (num < 10) {
-   printf("Less than 10");
-} else {
-   printf("Equal to 10");
-}
-}
+    else if (X >= 'A' && X <= 'Z') {
+        printf("ALPHA\n");
+        printf("IS CAPITAL\n");
+    }
 
-
-int main()
-{
-    int marks;
-    if(marks >= 80)
-    {
-        printf("A+");
+    else if (X >= 'a' && X <= 'z') {
+        printf("ALPHA\n");
+        printf("IS SMALL\n");
     }
-    else if(marks >= 70)
-    {
-        printf("A");
-    }
-    else if(marks >= 70)
-    {
-        printf("A-");
-    }
-}
-int main()
-{
-    int marks;
-    if(marks >= 80)
-    {
-        printf("A+");
-    }
-    if(marks >= 70)
-    {
-        printf("A");
-    }
-    if(marks >= 70)
-    {
-        printf("A-");
-    }
-}
-
-
-int main()
-{
-    int x = 0;
-    if (x == 1)
-    {
-        if (x == 0)
-        {
-            printf("inside if if\n");
-        }
-        else
-        {
-            printf("inside if else\n");
-        }
-    }
-    else
-    {
-        printf("inside else\n");
-    }
-}
-
-
-
-#include <stdio.h>
-int main()
-{
-    int x = 5;
-int y = 4;
-    if(x>=y && x<y+4)
-    {
-        if(y<5)
-        {
-            printf("hi ");
-        }
-        else if(y<10)
-        {
-            printf("hi ");
-        }
-    }
-    else
-    {
-        printf("hello ");
-    }
-}
-#include <stdio.h>
-int main()
-{
-    int x = 5;
-int y = 4;
-if (x >= y && x < y + 4)
-{
-    if (y < 5)
-    {
-        printf("hi ");
-    }
-    if (y < 10)
-    {
-        printf("hi ");
-    }
-}
-else
-{
-    printf("hello ");
-}
-}
-int main()
-{
-    int x = 0;
-    if (x == 1)
-    {
-        if (x >= 0)
-        {
-            printf("true\n");
-        }
-        else
-        {
-            printf("false\n");
-        }
-    }
+    
     return 0;
 }
