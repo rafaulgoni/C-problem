@@ -336,25 +336,79 @@
 // }
 
 
+// #include <stdio.h>
+
+// int main() {
+//     int A, B, C;
+    
+//     scanf("%d %d %d", &A, &B, &C);
+//     int min = A;
+//     int max = A;
+    
+//     if (B < min) {
+//         min = B;
+//     }
+//     if (C < min) {
+//         min = C;
+//     }
+    
+//     if (B > max) {
+//         max = B;
+//     }
+//     if (C > max) {
+//         max = C;
+//     }
+    
+//     printf("%d %d\n", min, max);
+    
+//     return 0;
+// }
+
+
+
+
+
+
+// #include <stdio.h>
+// int main() {
+//     char X;
+    
+//     scanf("%c", &X);
+
+//     if (X >= '0' && X <= '9') {
+//         printf("IS DIGIT\n");
+//     }
+
+//     else if (X >= 'A' && X <= 'Z') {
+//         printf("ALPHA\n");
+//         printf("IS CAPITAL\n");
+//     }
+
+//     else if (X >= 'a' && X <= 'z') {
+//         printf("ALPHA\n");
+//         printf("IS SMALL\n");
+//     }
+    
+//     return 0;
+// }
 #include <stdio.h>
 int main() {
-    char X;
-    
-    scanf("%c", &X);
-
-    if (X >= '0' && X <= '9') {
-        printf("IS DIGIT\n");
+    for(int i=-4;i>=0;i++)
+    {
+        for(int j=5;j<2;j++)
+        {
+            printf("hi ");
+        }
     }
-
-    else if (X >= 'A' && X <= 'Z') {
-        printf("ALPHA\n");
-        printf("IS CAPITAL\n");
+}
+#include <stdio.h>
+int main() {
+    for(int i=0; i<=10; i++)
+    {
+        printf("hi ");
+        if(i>2)
+        {
+            break;
+        }
     }
-
-    else if (X >= 'a' && X <= 'z') {
-        printf("ALPHA\n");
-        printf("IS SMALL\n");
-    }
-    
-    return 0;
 }
