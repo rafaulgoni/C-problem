@@ -391,24 +391,109 @@
     
 //     return 0;
 // }
+// #include <stdio.h>
+// int main() {
+//     for(int i=-4;i>=0;i++)
+//     {
+//         for(int j=5;j<2;j++)
+//         {
+//             printf("hi ");
+//         }
+//     }
+// }
+// #include <stdio.h>
+// int main() {
+//     for(int i=0; i<=10; i++)
+//     {
+//         printf("hi ");
+//         if(i>2)
+//         {
+//             break;
+//         }
+//     }
+// }
+//-------------------------------------------
+
 #include <stdio.h>
+
 int main() {
-    for(int i=-4;i>=0;i++)
-    {
-        for(int j=5;j<2;j++)
-        {
-            printf("hi ");
-        }
+    char c;
+    
+    scanf("%c", &c);
+    if (c == 'z') {
+        printf("a\n");
+    } else {
+        printf("%c\n", c + 1);
     }
+
+    return 0;
 }
+
 #include <stdio.h>
+
 int main() {
-    for(int i=0; i<=10; i++)
-    {
-        printf("hi ");
-        if(i>2)
-        {
-            break;
+    long long a, b, c, d;
+
+    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
+    if (a + b + c == d || a + b - c == d || a - b + c == d || a - b - c == d || a * b + c == d || a * b - c == d || a + b * c == d || a - b * c == d || a * b * c == d) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+    
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    for (int i = 1; i <= N; i++) {
+        if (N % i == 0) {
+            printf("%d\n", i);
         }
     }
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+int main() {
+    int N;
+    int foundEven = 0;
+
+    scanf("%d", &N);
+    
+    for (int i = 1; i <= N; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+            foundEven = 1; 
+        }
+    }
+    if (!foundEven) {
+        printf("-1\n");
+    }
+    
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int N, tens, ones;
+
+    scanf("%d", &N);
+
+    tens = N / 10;
+    ones = N % 10;
+  
+    if (ones != 0 && (tens % ones == 0 || ones % tens == 0)) {
+        printf("YES\n");
+    } else {
+        printf("NO\n");
+    }
+
+    return 0;
 }
