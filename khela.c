@@ -87,7 +87,6 @@
 //     }
 //     printf("%d",j);
 
-
 // }
 // #include <stdio.h>
 // int main()
@@ -210,7 +209,6 @@
 // }
 // }
 
-
 // int main()
 // {
 //     int marks;
@@ -243,7 +241,6 @@
 //         printf("A-");
 //     }
 // }
-
 
 // int main()
 // {
@@ -264,8 +261,6 @@
 //         printf("inside else\n");
 //     }
 // }
-
-
 
 // #include <stdio.h>
 // int main()
@@ -330,49 +325,42 @@
 
 // #include <stdio.h>
 // int main() {
-    
-    
+
 //     return 0;
 // }
-
 
 // #include <stdio.h>
 
 // int main() {
 //     int A, B, C;
-    
+
 //     scanf("%d %d %d", &A, &B, &C);
 //     int min = A;
 //     int max = A;
-    
+
 //     if (B < min) {
 //         min = B;
 //     }
 //     if (C < min) {
 //         min = C;
 //     }
-    
+
 //     if (B > max) {
 //         max = B;
 //     }
 //     if (C > max) {
 //         max = C;
 //     }
-    
+
 //     printf("%d %d\n", min, max);
-    
+
 //     return 0;
 // }
-
-
-
-
-
 
 // #include <stdio.h>
 // int main() {
 //     char X;
-    
+
 //     scanf("%c", &X);
 
 //     if (X >= '0' && X <= '9') {
@@ -388,7 +376,7 @@
 //         printf("ALPHA\n");
 //         printf("IS SMALL\n");
 //     }
-    
+
 //     return 0;
 // }
 // #include <stdio.h>
@@ -414,16 +402,213 @@
 // }
 //-------------------------------------------
 
+// #include <stdio.h>
+
+// int main() {
+//     char c;
+
+//     scanf("%c", &c);
+//     if (c == 'z') {
+//         printf("a\n");
+//     } else {
+//         printf("%c\n", c + 1);
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     long long a, b, c, d;
+
+//     scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
+//     if (a + b + c == d || a + b - c == d || a - b + c == d || a - b - c == d || a * b + c == d || a * b - c == d || a + b * c == d || a - b * c == d || a * b * c == d) {
+//         printf("YES\n");
+//     } else {
+//         printf("NO\n");
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     for (int i = 1; i <= N; i++) {
+//         if (N % i == 0) {
+//             printf("%d\n", i);
+//         }
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int N;
+//     int foundEven = 0;
+
+//     scanf("%d", &N);
+
+//     for (int i = 1; i <= N; i++) {
+//         if (i % 2 == 0) {
+//             printf("%d\n", i);
+//             foundEven = 1;
+//         }
+//     }
+//     if (!foundEven) {
+//         printf("-1\n");
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N, tens, ones;
+
+//     scanf("%d", &N);
+
+//     tens = N / 10;
+//     ones = N % 10;
+
+//     if (ones != 0 && (tens % ones == 0 || ones % tens == 0)) {
+//         printf("YES\n");
+//     } else {
+//         printf("NO\n");
+//     }
+
+//     return 0;
+// }
+
+//..........................................
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d",&n);
+//      for(int i=1; i<=n; i++){
+//         for(int j=1; j<=n-i; j++){
+//             printf(" ");
+//         }
+//         for (int k=1; k<=i; k++){
+//             printf("* ");
+//         }
+//         printf("\n");
+//      }
+//     return 0;
+// }
+
+// int main(){
+//     int n;
+//     scanf("%d", &n);
+//     for(int i=1; i<=n; i++){
+//         for(int j =1; j<=n-i; j++){
+//             printf("  ");
+//         }
+//         for(int j = 1; j<=2*i-1;j++){
+//             printf("* ");
+//         }
+//         printf("\n");
+//     }
+// }
+
+// int main(){
+//     int n;
+//     scanf("%d", &n);
+//     for(int i=1; i<=n; i++){
+//         for(int j =1; j<=n-i; j++){
+//             printf("  ");
+//         }
+//         for(int j = 1; j<=2*i-1;j++){
+//             printf("* ");
+//         }
+//         printf("\n");
+//     }
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d",&n);
+//      for(int i=n; i>=1; i--){
+//         for(int j=1; j<=n-i; j++){
+//             printf(" ");
+//         }
+//         for (int k=1; k<=i; k++){
+//             printf(" *");
+//         }
+//         printf("\n");
+//      }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     int n;
+//     scanf("%d",&n);
+//      for(int i=1; i<=n; i++){
+//            char ch = 'A' + i ;
+//         for(int j=1; j<=i; j++){
+//             printf("%c " &ch);
+//         }
+//             }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n, row, col;
+//     scanf("%d", &n);
+
+//     for (row = 1; row <= n; row++)
+//     {
+//         for (col = 1; col <= n - row; col++)
+//         {
+//             printf(" ");
+//         }
+//         for (col = 1; col <= 2 * row - 1; col++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+//     for (row = n; row >= 1; row--)
+//     {
+//         for (col = 1; col <= n - row; col++)
+//         {
+//             printf(" ");
+//         }
+//         for (col = 1; col <= 2 * row - 1; col++)
+//         {
+//             printf("*");
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
+//exam...
+
 #include <stdio.h>
 
 int main() {
     char c;
-    
     scanf("%c", &c);
-    if (c == 'z') {
-        printf("a\n");
+    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+        printf("Vowel\n");
     } else {
-        printf("%c\n", c + 1);
+        printf("Consonant\n");
     }
 
     return 0;
@@ -432,68 +617,63 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    long long a, b, c, d;
+    int N, i, num;
+    int count0 = 0, count1 = 0;
 
-    scanf("%lld %lld %lld %lld", &a, &b, &c, &d);
-    if (a + b + c == d || a + b - c == d || a - b + c == d || a - b - c == d || a * b + c == d || a * b - c == d || a + b * c == d || a - b * c == d || a * b * c == d) {
-        printf("YES\n");
-    } else {
-        printf("NO\n");
+    scanf("%d", &N);
+
+    for (i = 0; i < N; i++) {
+        scanf("%d", &num);
+        if (num == 0) {
+            count0++;
+        } else if (num == 1) {
+            count1++;
+        }
+    }
+    printf("%d %d\n", count0, count1);
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int N, X;
+    scanf("%d", &N);
+    int arr[N];
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &X);
+    arr[X-1] = arr[X-1] == 0 ? 1 : 0;
+    for (int i = 0; i < N; i++) {
+        printf("%d ", arr[i]);
     }
     
     return 0;
 }
+
+
+
 
 #include <stdio.h>
 
 int main() {
     int N;
     scanf("%d", &N);
-    for (int i = 1; i <= N; i++) {
-        if (N % i == 0) {
-            printf("%d\n", i);
+    int salami[N];
+    int max_salami = 0;
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &salami[i]);
+        if (salami[i] > max_salami) {
+            max_salami = salami[i];
         }
     }
-    
-    return 0;
-}
-
-
-#include <stdio.h>
-int main() {
-    int N;
-    int foundEven = 0;
-
-    scanf("%d", &N);
-    
-    for (int i = 1; i <= N; i++) {
-        if (i % 2 == 0) {
-            printf("%d\n", i);
-            foundEven = 1; 
-        }
-    }
-    if (!foundEven) {
-        printf("-1\n");
-    }
-    
-    return 0;
-}
-
-#include <stdio.h>
-
-int main() {
-    int N, tens, ones;
-
-    scanf("%d", &N);
-
-    tens = N / 10;
-    ones = N % 10;
-  
-    if (ones != 0 && (tens % ones == 0 || ones % tens == 0)) {
-        printf("YES\n");
-    } else {
-        printf("NO\n");
+    for (int i = 0; i < N; i++) {
+        printf("%d ", max_salami - salami[i]);
     }
 
     return 0;
 }
+
+
