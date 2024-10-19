@@ -600,79 +600,115 @@
 
 //exam...
 
-#include <stdio.h>
+// #include <stdio.h>
+// int main() {
+//     char c;
+//     scanf("%c", &c);
+//     if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+//         printf("Vowel\n");
+//     } else {
+//         printf("Consonant\n");
+//     }
+//     return 0;
+// }
 
-int main() {
-    char c;
-    scanf("%c", &c);
-    if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-        printf("Vowel\n");
-    } else {
-        printf("Consonant\n");
-    }
+// #include <stdio.h>
 
-    return 0;
-}
+// int main() {
+//     int N, i, num;
+//     int count0 = 0, count1 = 0;
 
-#include <stdio.h>
+//     scanf("%d", &N);
 
-int main() {
-    int N, i, num;
-    int count0 = 0, count1 = 0;
+//     for (i = 0; i < N; i++) {
+//         scanf("%d", &num);
+//         if (num == 0) {
+//             count0++;
+//         } else if (num == 1) {
+//             count1++;
+//         }
+//     }
+//     printf("%d %d\n", count0, count1);
 
-    scanf("%d", &N);
+//     return 0;
+// }
 
-    for (i = 0; i < N; i++) {
-        scanf("%d", &num);
-        if (num == 0) {
-            count0++;
-        } else if (num == 1) {
-            count1++;
-        }
-    }
-    printf("%d %d\n", count0, count1);
+// #include <stdio.h>
 
-    return 0;
-}
-
-#include <stdio.h>
-
-int main() {
-    int N, X;
-    scanf("%d", &N);
-    int arr[N];
-    for (int i = 0; i < N; i++) {
-        scanf("%d", &arr[i]);
-    }
-    scanf("%d", &X);
-    arr[X-1] = arr[X-1] == 0 ? 1 : 0;
-    for (int i = 0; i < N; i++) {
-        printf("%d ", arr[i]);
-    }
+// int main() {
+//     int N, X;
+//     scanf("%d", &N);
+//     int arr[N];
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+//     scanf("%d", &X);
+//     arr[X-1] = arr[X-1] == 0 ? 1 : 0;
+//     for (int i = 0; i < N; i++) {
+//         printf("%d ", arr[i]);
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
 
 
+
+
+// #include <stdio.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     int salami[N];
+//     int max_salami = 0;
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &salami[i]);
+//         if (salami[i] > max_salami) {
+//             max_salami = salami[i];
+//         }
+//     }
+//     for (int i = 0; i < N; i++) {
+//         printf("%d ", max_salami - salami[i]);
+//     }
+
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+    
+//     int A[N];
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &A[i]);
+//     }
+    
+//     for (int i = 0; i < N; i++) {
+//         if (A[i] <= 10) {
+//             printf("A[%d] = %d\n", i, A[i]);
+//         }
+//     }
+    
+//     return 0;
+// }
 
 
 #include <stdio.h>
-
 int main() {
     int N;
     scanf("%d", &N);
-    int salami[N];
-    int max_salami = 0;
+    int A[N];
     for (int i = 0; i < N; i++) {
-        scanf("%d", &salami[i]);
-        if (salami[i] > max_salami) {
-            max_salami = salami[i];
+        scanf("%d", &A[i]);
+    }
+    for (int i = 0; i < N; i++) {
+        if (A[i] <= 10) {  
+            printf("A[%d] = %d\n", i, A[i]);
         }
     }
-    for (int i = 0; i < N; i++) {
-        printf("%d ", max_salami - salami[i]);
-    }
-
+    
     return 0;
 }
 
