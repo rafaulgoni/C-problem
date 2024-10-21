@@ -695,21 +695,65 @@
 // }
 
 
+// #include <stdio.h>
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     int A[N];
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &A[i]);
+//     }
+//     for (int i = 0; i < N; i++) {
+//         if (A[i] <= 10) {  
+//             printf("A[%d] = %d\n", i, A[i]);
+//         }
+//     }
+    
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     char str[20] = "HelloW\0rld";
+//     printf("%s",str);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     char str[20];
+//     scanf("%s",&str);
+//     printf("%s",str);
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main()
+// {
+//     char str[20];
+//     scanf("%c",&str);
+//     printf("%s",str);
+//     return 0;
+// }
+
+
 #include <stdio.h>
+
 int main() {
     int N;
     scanf("%d", &N);
+    
     int A[N];
     for (int i = 0; i < N; i++) {
         scanf("%d", &A[i]);
     }
-    for (int i = 0; i < N; i++) {
-        if (A[i] <= 10) {  
-            printf("A[%d] = %d\n", i, A[i]);
-        }
+    
+    for (int i = N - 1; i >= 0; i--) {
+        printf("%d ", A[i]);
     }
     
     return 0;
 }
-
 
