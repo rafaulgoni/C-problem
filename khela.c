@@ -757,30 +757,167 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main() {
-    int N;
-    scanf("%d", &N);
+// #include <stdio.h>
+// int main() {
+//     int N;
+//     scanf("%d", &N);
     
-    int A[N];
-    for (int i = 0; i < N; i++) {
-        scanf("%d", &A[i]);
-    }
+//     int A[N];
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &A[i]);
+//     }
 
-    int isPalindrome = 1;  
+//     int isPalindrome = 1;  
     
-    for (int i = 0; i < N / 2; i++) {
-        if (A[i] != A[N - i - 1]) {
-            isPalindrome = 0; 
-            break;
-        }
-    }
+//     for (int i = 0; i < N / 2; i++) {
+//         if (A[i] != A[N - i - 1]) {
+//             isPalindrome = 0; 
+//             break;
+//         }
+//     }
     
-    if (isPalindrome) {
-        printf("YES\n");
-    } else {
-        printf("NO\n");
+//     if (isPalindrome) {
+//         printf("YES\n");
+//     } else {
+//         printf("NO\n");
+//     }
+    
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <string.h>
+// // int main()
+// // {
+// // char str[] = "hello\0world";
+// // printf("%d",strlen(str));
+// // }
+
+// int main()
+// {
+// char str[] = "hi, we are learning string! ";
+// printf("%d",strlen(str));
+// }
+
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+//     char a[] = "hello";
+//     char b[] = "world";
+    
+//     char original_b[6]; 
+//     strcpy(original_b, b); 
+//     strcpy(b, a);
+//     printf("Original b (world): %s\n", original_b);
+
+//     return 0;
+// }
+
+
+
+
+// mid trem exam.....................
+
+// #include <stdio.h>
+
+// int main() {
+//     int N, K;
+//     scanf("%d %d", &N, &K);
+//     for(int i = 0; i < N; i++) {
+//         for(int j = 1; j <= K; j++) {
+//             printf("%d ", j);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N, T;
+//     scanf("%d %d", &N, &T);
+    
+//     int books[N];
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &books[i]);
+//     }
+//     int sum = 0;   
+//     int count = 0; 
+//     for (int i = 0; i < N; i++) {
+//         sum += books[i];
+//         if (sum > T) {
+//             break;
+//         }
+//         count++;
+//     }
+//     printf("%d\n", count);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int N, X, Y;
+//     scanf("%d %d %d", &N, &X, &Y);
+//     int count = 0;
+//     for (int i = 0; i < N; i++) {
+//         int price;
+//         scanf("%d", &price);
+//         if (price >= X && price <= Y) {
+//             count++;
+//         }
+//     }
+//     printf("%d\n", count);
+    
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     for (int i = 0; i < N; i++) {
+//         int experience;
+//         scanf("%d", &experience);
+//         if (experience < 1) {
+//             printf("Entry-level candidate\n");
+//         } else if (experience >= 1 && experience <= 3) {
+//             printf("Junior candidate\n");
+//         } else if (experience >= 4 && experience <= 7) {
+//             printf("Mid-level candidate\n");
+//         } else {
+//             printf("Senior candidate\n");
+//         }
+//     }
+    
+//     return 0;
+// }
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char S1[1000], S2[1000], S3[1000];
+    scanf("%s %s %s", S1, S2, S3);
+    
+    char *minStr = S1;
+    char *maxStr = S1;
+    if (strcmp(S2, minStr) < 0) {
+        minStr = S2;
     }
+    if (strcmp(S3, minStr) < 0) {
+        minStr = S3;
+    }
+    if (strcmp(S2, maxStr) > 0) {
+        maxStr = S2;
+    }
+    if (strcmp(S3, maxStr) > 0) {
+        maxStr = S3;
+    }
+    printf("%s\n", minStr);
+    printf("%s\n", maxStr);
     
     return 0;
 }
