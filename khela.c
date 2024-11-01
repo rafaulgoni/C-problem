@@ -895,29 +895,166 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+//     int x = 10;
+// int *p = &x;
+// x++;
+// printf("%d",*p);
+// //     char S1[1000], S2[1000], S3[1000];
+// //     scanf("%s %s %s", S1, S2, S3);
+    
+// //     char *minStr = S1;
+// //     char *maxStr = S1;
+// //     if (strcmp(S2, minStr) < 0) {
+// //         minStr = S2;
+// //     }
+// //     if (strcmp(S3, minStr) < 0) {
+// //         minStr = S3;
+// //     }
+// //     if (strcmp(S2, maxStr) > 0) {
+// //         maxStr = S2;
+// //     }
+// //     if (strcmp(S3, maxStr) > 0) {
+// //         maxStr = S3;
+// //     }
+// //     printf("%s\n", minStr);
+// //     printf("%s\n", maxStr);
+    
+//     return 0;
+// }
+
+//Assignment 03 | Introduction to C programming | Batch 06
+
+// #include <stdio.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+    
+//     int isMatrix = 1;
+//     for (int i = 0; i < N; i++) {
+//         for (int j = 0; j < N; j++) {
+//             int value;
+//             scanf("%d", &value);
+            
+//             if ((i == j && value != 1) || (i != j && value != 0)) {
+//                 isMatrix = 0;
+//             }
+//         }
+//     }
+    
+//     if (isMatrix) {
+//         printf("YES\n");
+//     } else {
+//         printf("NO\n");
+//     }
+    
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main() {
+//     int N, M, X;
+//     scanf("%d %d %d", &N, &M, &X);
+    
+//     int matrix[N][M];
+//     for (int i = 0; i < N; i++) {
+//         for (int j = 0; j < M; j++) {
+//             scanf("%d", &matrix[i][j]);
+//         }
+//     }
+//     for (int q = 0; q < X; q++) {
+//         int target;
+//         scanf("%d", &target);
+        
+//         int count = 0;
+//         for (int i = 0; i < N; i++) {
+//             for (int j = 0; j < M; j++) {
+//                 if (matrix[i][j] == target) {
+//                     count++;
+//                 }
+//             }
+//         }
+        
+//         printf("%d\n", count);
+//     }
+    
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main() {
+
+//     int N;
+//     scanf("%d", &N);
+    
+//     int *arr = (int *)malloc(N * sizeof(int));
+//     int *count = (int *)calloc(100001, sizeof(int));
+    
+//     for (int i = 0; i < N; i++) {
+//         scanf("%d", &arr[i]);
+//         count[arr[i]]++;
+//     }
+    
+//     int uniqueCount = 0;
+//     for (int i = 0; i < N; i++) {
+//         if (count[arr[i]] == 1) {
+//             uniqueCount++;
+//         }
+//     }
+    
+//     printf("%d\n", uniqueCount);
+    
+//     free(arr);
+//     free(count);
+//     return 0;
+// }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     int *arr = (int *)malloc(sizeof(int));
+//     int size = 1;
+//     for (int i = 0; i < N; i++) {
+//         int num;
+//         scanf("%d", &num);
+        
+//         if (i >= size) {
+//             size++;
+//             arr = (int *)realloc(arr, size * sizeof(int));
+//         }
+//         arr[i] = num;
+//     }
+//     for (int i = 0; i < N; i++) {
+//         printf("%d ", arr[i]);
+//     }
+    
+//     free(arr);
+//     return 0;
+// }
+
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int main() {
-    char S1[1000], S2[1000], S3[1000];
-    scanf("%s %s %s", S1, S2, S3);
+    int A, B;
+    scanf("%d %d", &A, &B);
     
-    char *minStr = S1;
-    char *maxStr = S1;
-    if (strcmp(S2, minStr) < 0) {
-        minStr = S2;
-    }
-    if (strcmp(S3, minStr) < 0) {
-        minStr = S3;
-    }
-    if (strcmp(S2, maxStr) > 0) {
-        maxStr = S2;
-    }
-    if (strcmp(S3, maxStr) > 0) {
-        maxStr = S3;
-    }
-    printf("%s\n", minStr);
-    printf("%s\n", maxStr);
+    int *ptrA = &A;
+    int *ptrB = &B;
+    
+    int difference = abs(*ptrA - *ptrB);
+    
+    printf("%d\n", difference);
     
     return 0;
 }
