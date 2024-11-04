@@ -1042,19 +1042,45 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 
-int main() {
-    int A, B;
-    scanf("%d %d", &A, &B);
+// int main() {
+//     int A, B;
+//     scanf("%d %d", &A, &B);
     
-    int *ptrA = &A;
-    int *ptrB = &B;
+//     int *ptrA = &A;
+//     int *ptrB = &B;
     
-    int difference = abs(*ptrA - *ptrB);
+//     int difference = abs(*ptrA - *ptrB);
     
-    printf("%d\n", difference);
+//     printf("%d\n", difference);
     
-    return 0;
+//     return 0;
+// }
+
+ #include <stdio.h>
+void f2()
+{
+printf("f1 ");
 }
+void f1()
+{
+printf("f2 ");
+f2();
+}
+int main()
+{
+printf("Main ");
+f1();
+}
+
+// #include <stdio.h>
+// void fun()
+// {
+// printf("fun\n");
+// }
+// int main()
+// {
+// fun();
+// }
