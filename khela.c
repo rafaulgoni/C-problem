@@ -1133,12 +1133,126 @@
 // int ary[4] = {1, 2, 3, 4};
 // printf("%d\n", *ary);
 // }
-#include <stdio.h>
-int main()
-{
-int ary[4] = {1, 2, 3, 4};
-int *p;
-p = ary + 3;
-*p = 5;
-printf("%d\n", ary[3]);
-}
+// #include <stdio.h>
+// int main()
+// {
+// int ary[4] = {1, 2, 3, 4};
+// int *p;
+// p = ary + 3;
+// *p = 5;
+// printf("%d\n", ary[3]);
+// }
+
+
+// p-2
+// #include <stdio.h>
+
+// void shiftZerosRight(int arr[], int n) {
+//     int j = 0;
+//     for (int i = 0; i < n; i++) {
+//         if (arr[i] != 0) {
+//             arr[j] = arr[i];
+//             j++;
+//         }
+//     }
+//     for (int i = j; i < n; i++) {
+//         arr[i] = 0;
+//     }
+// }
+
+// int main() {
+//     int n;
+//     scanf("%d", &n);
+
+//     int arr[n];
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+
+//     shiftZerosRight(arr, n);
+//     for (int i = 0; i < n; i++) {
+//         printf("%d ", arr[i]);
+//     }
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// void find_min_max(int arr[], int n, int *min, int *max) {
+//     *min = arr[0];
+//     *max = arr[0];
+    
+//     for (int i = 1; i < n; i++) {
+//         if (arr[i] < *min) {
+//             *min = arr[i];
+//         }
+//         if (arr[i] > *max) {
+//             *max = arr[i];
+//         }
+//     }
+// }
+
+// int main() {
+//     int n;
+
+//     scanf("%d", &n);
+    
+//     int arr[n];
+
+//     for (int i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
+    
+//     int min, max;
+//     find_min_max(arr, n, &min, &max);
+//     printf("%d %d\n", min, max);
+    
+//     return 0;
+// }
+// #include <stdio.h>
+
+// long long log2_recursive(long long N) {
+//     if (N == 1) {
+//         return 0;
+//     }
+//     return 1 + log2_recursive(N / 2);
+// }
+
+// int main() {
+//     long long N;
+//     scanf("%lld", &N);
+    
+//     printf("%lld\n", log2_recursive(N));
+    
+//     return 0;
+// }
+
+// #include <stdio.h>
+// int sum(int x, int y) {
+//     return x + y;
+// }
+
+// int main() {
+//     int X, Y;
+//     scanf("%d %d", &X, &Y);
+//     printf("%d\n", sum(X, Y));
+
+//     return 0;
+// }
+// #include <stdio.h>
+
+// void printNumbers(int current, int N) {
+//     if (current > N) {
+//         return; 
+//     }
+//     printf("%d\n", current);  
+//     printNumbers(current + 1, N); 
+// }
+
+// int main() {
+//     int N;
+//     scanf("%d", &N);
+//     printNumbers(1, N);
+    
+//     return 0;
+// }
